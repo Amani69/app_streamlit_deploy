@@ -10,7 +10,6 @@ datetime
 statsmodels
 plotly
 altair
-database
 streamlit_authenticator
 streamlit_option_menu
 streamlit_lottie
