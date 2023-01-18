@@ -13,6 +13,5 @@ altair
 streamlit_authenticator
 streamlit_option_menu
 streamlit_lottie
-json
 requests 
 
