@@ -1,21 +1,16 @@
 # import
 import streamlit as st
 import pandas as pd
-import pickle
 import matplotlib.pyplot as plt
 import numpy as np
 import plotly.express as px
-from sklearn.metrics import mean_squared_error
-from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
-from sklearn import metrics
 import seaborn as sns
 import pyautogui
 import datetime
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from sklearn.preprocessing import StandardScaler, RobustScaler, MinMaxScaler
 from sklearn.metrics import mean_squared_error, mean_absolute_error,r2_score
-import plotly.express as px
 import plotly.graph_objects as go
 import altair as alt
 import database as db
