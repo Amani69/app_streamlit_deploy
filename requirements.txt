@@ -1,6 +1,6 @@
 streamlit
 pandas
-matplotlib.pyplot 
+matplotlib
 numpy
 plotly.express
 sklearn
@@ -8,7 +8,7 @@ seaborn
 pyautogui
 datetime
 statsmodels
-plotly.graph_objects
+plotly
 altair
 database
 streamlit_authenticator
