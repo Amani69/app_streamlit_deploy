@@ -110,16 +110,16 @@ if authentication_status:
                    )
     st.sidebar.plotly_chart(fig1, use_container_width=True)
 
-#pour enlever made in streamlit, parmas , ligne...
-   # --- HIDE STREAMLIT STYLE ---
-    hide_st_style = """
-                <style>
-                #MainMenu {visibility: hidden;}
-                footer {visibility: hidden;}
-                header {visibility: hidden;}
-                </style>
-                """
-    st.markdown(hide_st_style, unsafe_allow_html=True)
+# #pour enlever made in streamlit, parmas , ligne...
+#    # --- HIDE STREAMLIT STYLE ---
+#     hide_st_style = """
+#                 <style>
+#                 #MainMenu {visibility: hidden;}
+#                 footer {visibility: hidden;}
+#                 header {visibility: hidden;}
+#                 </style>
+#                 """
+#     st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 
