@@ -31,21 +31,21 @@ def load_lottiefile(filepath: str):
 st.set_page_config(page_title="Community Attrition Management", page_icon="::chart_with_upwards_trend:", layout="wide")
 
 
-users=db.fetch_all_users() 
-usernames=[user["key"] for user in users]
-names=[user["name"] for user in users]
-hashed_passwords=[user["password"] for user in users]
+# users=db.fetch_all_users() 
+# usernames=[user["key"] for user in users]
+# names=[user["name"] for user in users]
+# hashed_passwords=[user["password"] for user in users]
   
-authenticator = stauth.Authenticate(names, usernames, hashed_passwords,
-    "Eclaireurs_prediction", "abcdef", cookie_expiry_days=30)
+# authenticator = stauth.Authenticate(names, usernames, hashed_passwords,
+#     "Eclaireurs_prediction", "abcdef", cookie_expiry_days=30)
 
-lottie_log = load_lottiefile("login.json") 
-lottie_go = load_lottiefile("go.json") 
-
-
+# lottie_log = load_lottiefile("login.json") 
+# lottie_go = load_lottiefile("go.json") 
 
 
-name, authentication_status, username = authenticator.login("Login", 'sidebar')
+
+
+# name, authentication_status, username = authenticator.login("Login", 'sidebar')
 
 # if authentication_status == False:
 #     st.error("Username/password is incorrect")
