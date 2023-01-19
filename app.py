@@ -1,7 +1,7 @@
 import streamlit as st
 import os
-import os
-os.environ['DISPLAY'] = ':0'
+import webbrowser as web
+#os.environ['DISPLAY'] = ':0'
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
