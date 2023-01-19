@@ -16,7 +16,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error,r2_score
 import plotly.graph_objects as go
 import altair as alt
 import database as db
-import streamlit_authenticator as stauth
+#import streamlit_authenticator as stauth
 from streamlit_option_menu import  option_menu 
 from streamlit_lottie import st_lottie
 import json
@@ -66,8 +66,8 @@ st.set_page_config(page_title="Community Attrition Management", page_icon="::cha
 # if authentication_status:
      
 
-authenticator.logout("Logout", "sidebar")
-st.sidebar.title(f"Welcome {name}")
+# authenticator.logout("Logout", "sidebar")
+# st.sidebar.title(f"Welcome {name}")
 st.sidebar.image('Capture14.png', width=100)
 
 st.sidebar.markdown('# Eclaireurs')
