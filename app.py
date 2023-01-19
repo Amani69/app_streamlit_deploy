@@ -8,7 +8,7 @@ import numpy as np
 import plotly.express as px
 from sklearn.model_selection import train_test_split
 import seaborn as sns
-import pyautogui
+#import pyautogui
 import datetime
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from sklearn.preprocessing import StandardScaler, RobustScaler, MinMaxScaler
