@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+os.environ['DISPLAY'] = ':0'
 import webbrowser as web
 import pandas as pd
 import matplotlib.pyplot as plt
