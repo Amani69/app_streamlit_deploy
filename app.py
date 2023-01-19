@@ -16,7 +16,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error,r2_score
 import plotly.graph_objects as go
 import altair as alt
 import database as db
-#import streamlit_authenticator as stauth
+import streamlit_authenticator as stauth
 from streamlit_option_menu import  option_menu 
 from streamlit_lottie import st_lottie
 import json
@@ -105,10 +105,6 @@ st.sidebar.plotly_chart(fig1, use_container_width=True)
 #             header {visibility: hidden;}
 #             </style>
 #             """
-
-
-
-
 
 
 def main():
@@ -299,5 +295,5 @@ def main():
 
             
         
-    if __name__ == '__main__':
-        main() 
+if __name__ == '__main__':
+    main() 
