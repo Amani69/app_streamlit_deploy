@@ -62,7 +62,7 @@ def check_password():
         width=300,
         key=None,
         )
-        st.sidebar.warning("Please enter your username and password",icon="⚠️")
+        st.warning("Please enter your username and password",icon="⚠️")
         return False
     elif not st.session_state["password_correct"]:
         # Password not correct, show input + error.
