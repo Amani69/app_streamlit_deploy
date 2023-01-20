@@ -46,13 +46,12 @@ def check_password():
         else:
             st.session_state["password_correct"] = False
 
-    if "password_correct" not in st.session_state:
+    if "password_correct" not in st.session_state and st.button("Login"):
         # First run, show inputs for username + password.
         st.text_input("Username", on_change=password_entered, key="username")
         st.text_input(
             "Password", type="password", on_change=password_entered, key="password"
         )
-        st.button("Click me")
         st.warning("Please enter your username and password",icon="⚠️")
         st_lottie(
         lottie_log,
