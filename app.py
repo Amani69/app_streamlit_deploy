@@ -52,6 +52,7 @@ def check_password():
         st.text_input(
             "Password", type="password", on_change=password_entered, key="password"
         )
+        st.button("Click me")
         st.warning("Please enter your username and password",icon="⚠️")
         st_lottie(
         lottie_log,
@@ -74,7 +75,6 @@ def check_password():
         return False
     else:
         # Password correct.
-        st.button("Click me")
         return True
 
 if check_password():
