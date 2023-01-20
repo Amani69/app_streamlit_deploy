@@ -51,6 +51,17 @@ def check_password():
         st.text_input(
             "Password", type="password", on_change=password_entered, key="password"
         )
+        st_lottie(
+        lottie_log,
+        speed=1,
+        reverse=True,
+        loop=True,
+        quality="high", 
+        height=300,
+        width=300,
+        key=None,
+        )
+        st.sidebar.warning("Please enter your username and password",icon="⚠️")
         return False
     elif not st.session_state["password_correct"]:
         # Password not correct, show input + error.
@@ -75,8 +86,7 @@ if check_password():
   
 # authenticator = stauth.Authenticate(names, usernames, hashed_passwords,
 #     "Eclaireurs_prediction", "abcdef", cookie_expiry_days=30)
-
-# lottie_log = load_lottiefile("login.json") 
+lottie_log = load_lottiefile("login.json") 
 # lottie_go = load_lottiefile("go.json") 
 
 
