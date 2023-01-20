@@ -45,8 +45,8 @@ def check_password():
             del st.session_state["username"]
         else:
             st.session_state["password_correct"] = False
-
-    if "password_correct" not in st.session_state and st.button("Login"):
+   
+    if "password_correct" not in st.session_state :
         # First run, show inputs for username + password.
         st.text_input("Username", on_change=password_entered, key="username")
         st.text_input(
@@ -75,8 +75,8 @@ def check_password():
     else:
         # Password correct.
         return True
-
-if check_password():
+log=st.button("Login")
+if check_password() and log:
     # st.sidebar.write("Here goes your normal Streamlit app...")
     # st.sidebar.button("Click me")
 
