@@ -27,6 +27,7 @@ import sklearn
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
+lottie_log = load_lottiefile("login.json")
 
 st.set_page_config(page_title="Community Attrition Management", page_icon="::chart_with_upwards_trend:", layout="wide")
 def check_password():
@@ -86,7 +87,7 @@ if check_password():
   
 # authenticator = stauth.Authenticate(names, usernames, hashed_passwords,
 #     "Eclaireurs_prediction", "abcdef", cookie_expiry_days=30)
-    lottie_log = load_lottiefile("login.json") 
+    #lottie_log = load_lottiefile("login.json") 
 # lottie_go = load_lottiefile("go.json") 
 
 
@@ -114,7 +115,8 @@ if check_password():
      
 
 # authenticator.logout("Logout", "sidebar")
-# st.sidebar.title(f"Welcome {name}")
+    name="Username"
+    st.sidebar.title(f"Welcome {name}")
     st.sidebar.image('Capture14.png', width=100)
 
     st.sidebar.markdown('# Eclaireurs')
