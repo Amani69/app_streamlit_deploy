@@ -74,6 +74,7 @@ def check_password():
         return False
     else:
         # Password correct.
+        st.button("Click me")
         return True
 
 if check_password():
