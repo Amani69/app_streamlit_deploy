@@ -76,7 +76,7 @@ def check_password():
         # Password correct.
         return True
 
-if check_password() and check_password().login("login","main"):
+if check_password():
 
      
 
