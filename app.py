@@ -52,6 +52,7 @@ def check_password():
         st.text_input(
             "Password", type="password", on_change=password_entered, key="password"
         )
+        st.warning("Please enter your username and password",icon="⚠️")
         st_lottie(
         lottie_log,
         speed=1,
@@ -62,7 +63,6 @@ def check_password():
         width=300,
         key=None,
         )
-        st.warning("Please enter your username and password",icon="⚠️")
         return False
     elif not st.session_state["password_correct"]:
         # Password not correct, show input + error.
@@ -115,7 +115,7 @@ if check_password():
      
 
 # authenticator.logout("Logout", "sidebar")
-    name="Username"
+    name="Amani"
     st.sidebar.title(f"Welcome {name}")
     st.sidebar.image('Capture14.png', width=100)
 
@@ -145,15 +145,15 @@ if check_password():
                     )
     st.sidebar.plotly_chart(fig1, use_container_width=True)
 
-    # #pour enlever made in streamlit, parmas , ligne...
-    # # --- HIDE STREAMLIT STYLE ---
-    # hide_st_style = """
-    #             <style>
-    #             #MainMenu {visibility: hidden;}
-    #             footer {visibility: hidden;}
-    #             header {visibility: hidden;}
-    #             </style>
-    #             """
+    #pour enlever made in streamlit, parmas , ligne...
+    # --- HIDE STREAMLIT STYLE ---
+    hide_st_style = """
+                <style>
+                #MainMenu {visibility: hidden;}
+                footer {visibility: hidden;}
+                header {visibility: hidden;}
+                </style>
+                """
 
 
 
