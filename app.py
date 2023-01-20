@@ -76,8 +76,8 @@ def check_password():
         return True
 
 if check_password():
-    st.sidebar.write("Here goes your normal Streamlit app...")
-    st.sidebar.button("Click me")
+    # st.sidebar.write("Here goes your normal Streamlit app...")
+    # st.sidebar.button("Click me")
 
 # users=db.fetch_all_users() 
 # usernames=[user["key"] for user in users]
@@ -86,7 +86,7 @@ if check_password():
   
 # authenticator = stauth.Authenticate(names, usernames, hashed_passwords,
 #     "Eclaireurs_prediction", "abcdef", cookie_expiry_days=30)
-lottie_log = load_lottiefile("login.json") 
+    lottie_log = load_lottiefile("login.json") 
 # lottie_go = load_lottiefile("go.json") 
 
 
